@@ -9,16 +9,11 @@ pipeline {
                 #!/bin/bash
                 TEST='this is a test'
                 echo $TEST
-                gatsby -v
+                ls -l
+                pwd
                 '''
                 }
              }
           }
       }
-   post { 
-        always { 
-            echo 'I will always say Hello again!'
-        }
-      }
-    }
   }
