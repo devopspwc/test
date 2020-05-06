@@ -13,7 +13,7 @@ pipeline {
                 echo $TEST
                 ls -l
                 pwd
-                echo 'Did it work?
+                echo 'Did it work?'
                 '''
                 }
              }
