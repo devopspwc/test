@@ -14,6 +14,8 @@ pipeline {
                 ls -l
                 pwd
                 echo 'Did it work?'
+                df -H
+                id
                 '''
                 }
              }
