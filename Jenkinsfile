@@ -1,11 +1,8 @@
 // Work
 pipeline {
    agent any
-   triggers {
-        pollSCM('H/15 * * * *'
-    }
    stages {
-     stage('UAT') {
+     stage('TEST') {
       steps {
             dir ('') {
                 sh label: '', script: '''
@@ -18,10 +15,4 @@ pipeline {
              }
           }
       }
-   post { 
-        always { 
-            echo 'I will always say Hello again!'
-        }
-      }
-    }
-  }
+   }
