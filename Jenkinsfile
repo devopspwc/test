@@ -1,7 +1,7 @@
 // Work
 pipeline {
-   agent any
-   triggers { pollSCM('H/15 * * * *')
+   agent { label 'on_prem_agent' }
+   //triggers { pollSCM('H/15 * * * *')
        }
    stages {
      stage('UAT') {
@@ -14,6 +14,7 @@ pipeline {
                 ls -l
                 pwd
                 echo 'Did it work?'
+                echo 'YES!'
                 '''
                 }
              }
