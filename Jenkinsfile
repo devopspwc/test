@@ -14,6 +14,7 @@ pipeline {
                 ls -l
                 pwd
                 echo 'Did it work?'
+		echo 'It did'
                 '''
                 }
              }
